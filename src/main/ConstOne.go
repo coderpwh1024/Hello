@@ -1,10 +1,18 @@
 package main
 
-import "fmt"
+import "unsafe"
+
+const (
+	aa = "abc"
+	bb = len(aa)
+	cc = unsafe.Sizeof(aa)
+)
 
 func main() {
 
-	const LENGTH int = 10
+	println(aa, bb, cc)
+
+	/*const LENGTH int = 10
 
 	const WIDTH int = 5
 
@@ -17,6 +25,6 @@ func main() {
 	fmt.Printf("面积为: %d ", area)
 	fmt.Println()
 
-	fmt.Println(a, b, c)
+	fmt.Println(a, b, c)*/
 
 }
