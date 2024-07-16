@@ -26,4 +26,15 @@ func main() {
 		fmt.Printf("第三行 - a不大于b\n")
 	}
 
+	a = 5
+	b = 20
+
+	if (a < b) {
+		fmt.Printf("第四行 -a 小于等于b\n")
+	}
+
+	if (b >= a) {
+		fmt.Printf("第五行 -b 大于等于 a\n")
+	}
+
 }
