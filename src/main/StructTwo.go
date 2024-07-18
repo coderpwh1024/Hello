@@ -40,17 +40,31 @@ func main() {
 		fmt.Printf("Book 2 subject %s\n", Book2.subject)
 		fmt.Printf("Book 2 book_id %d\n", Book2.book_id)*/
 
-	printBook(Book1)
+	/*	printBook(Book1)
+		fmt.Println("----------------------------------------------------------------")
+		printBook(Book2)
+	*/
+
+	printBook2(&Book1)
 	fmt.Println("----------------------------------------------------------------")
-	printBook(Book2)
+	printBook2(&Book2)
 
 }
 
+func printBook2(book *Book) {
+	fmt.Printf("Book title: %s\n", book.title)
+	fmt.Printf("Book author：%s\n", book.author)
+	fmt.Printf("Book subject:%s\n", book.subject)
+	fmt.Printf("Booke book_id:%d\n", book.book_id)
+}
+
+/*
+函数式
+*/
 func printBook(book Book) {
 
 	fmt.Printf("Book title: %s\n", book.title)
 	fmt.Printf("Book author：%s\n", book.author)
 	fmt.Printf("Book subject:%s\n", book.subject)
 	fmt.Printf("Booke book_id:%d\n", book.book_id)
-
 }
