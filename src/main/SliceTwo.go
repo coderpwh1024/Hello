@@ -6,6 +6,8 @@ func main() {
 
 	var numbers []int
 
+	printSliceTwo(numbers)
+
 	if numbers == nil {
 		fmt.Printf("切片是空的")
 	}
