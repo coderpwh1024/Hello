@@ -18,6 +18,12 @@ func main() {
 
 	printSliceThree(numbers1)
 
+	numbers2 := numbers[:2]
+	printSliceThree(numbers2)
+
+	numbers3 := numbers[2:5]
+	printSliceThree(numbers3)
+
 }
 
 func printSliceThree(x []int) {
