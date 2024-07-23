@@ -15,4 +15,17 @@ func main() {
 		fmt.Printf("key is: %d - value is: %f\n", key, value)
 	}
 
+	fmt.Println("--------------------------------------------")
+
+	// 遍历key
+	for key := range map1 {
+		fmt.Printf("key is:%d\n", key)
+	}
+
+	fmt.Println("--------------------------------------------")
+
+	for _, value := range map1 {
+		fmt.Printf("value is: %f\n", value)
+	}
+
 }
