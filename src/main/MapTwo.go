@@ -4,17 +4,12 @@ import "fmt"
 
 func main() {
 
-	var siteMap map[string]string
+	countryCapitalMap := map[string]string{"France": "Paris", "Italy": "Rome", "Japan": "Tokyo", "India": "New delhi"}
 
-	siteMap = make(map[string]string)
+	fmt.Println("原始地图")
 
-	siteMap["Google"] = "谷歌"
-	siteMap["Runoob"] = "菜鸟教程"
-	siteMap["Baidu"] = "百度"
-	siteMap["Wiki"] = "维基百科"
-
-	for site := range siteMap {
-		fmt.Println(site, "首都是", siteMap[site])
+	for country := range countryCapitalMap {
+		fmt.Println(country, "首都是", countryCapitalMap[country])
 	}
 
 }
