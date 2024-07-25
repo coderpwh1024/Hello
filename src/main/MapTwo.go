@@ -12,4 +12,11 @@ func main() {
 		fmt.Println(country, "首都是", countryCapitalMap[country])
 	}
 
+	fmt.Println("法国条目被删除")
+	fmt.Println("删除元素后地图")
+
+	for country := range countryCapitalMap {
+		fmt.Println(country, "首都是", countryCapitalMap[country])
+	}
+
 }
