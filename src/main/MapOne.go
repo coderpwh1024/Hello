@@ -17,4 +17,11 @@ func main() {
 		fmt.Println(site, "首都是", sitemap[site])
 	}
 
+	name, ok := sitemap["FaceBook"]
+
+	if ok {
+		fmt.Println("Facebook 的站点是", name)
+	} else {
+		fmt.Println("Facebook的站点不存在")
+	}
 }
