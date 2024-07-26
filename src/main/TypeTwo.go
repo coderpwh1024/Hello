@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func main() {
 
@@ -18,9 +15,18 @@ func main() {
 		}
 	*/
 
-	num := 3.14
-	str := strconv.FormatFloat(num, 'f', 2, 64)
+	/*	num := 3.14
+		str := strconv.FormatFloat(num, 'f', 2, 64)
 
-	fmt.Printf("浮点数 %f 转为字符串为: '%s'\n", num, str)
+		fmt.Printf("浮点数 %f 转为字符串为: '%s'\n", num, str)*/
+
+	var i interface{} = "Hello,World"
+
+	str, ok := i.(string)
+	if ok {
+		fmt.Println("%s is  a string \n", str)
+	} else {
+		fmt.Println("conversion failed")
+	}
 
 }
