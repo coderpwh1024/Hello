@@ -14,4 +14,10 @@ func main() {
 
 	fmt.Printf("mean 的值为:%f\n", mean)
 
+	var a int = 10
+
+	var b float64 = float64(a)
+
+	fmt.Println("b的值为:", b)
+
 }
